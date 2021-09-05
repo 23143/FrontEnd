@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>
+            Searching now...
+        </h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">IdeaManagement.tool</a>
+            </header>
+            
+            <h1><span>Idea Management Tool</span> Your Sticky Notes</h1>
+            <p>The way to get started is to quit talking and begin doing.  -Walt Disney</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left"></div>
+                    <label for="topic">Enter your plan name: </label>
+                    <input type="text" name="topic" id="topic">
+                    <p>Take your first step toward your plan complettion.
+                     Let's Make It Happen</p>
+
+                    <input type="button" value="Start" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="options">
+        <div class="right-col">
+            <h2>Functions</h2>
+            <p>
+              Ability to add/remove/edit highlights
+              Ability to create buckets to group highlights in
+              Ability to move highlights into buckets
+              Ability to move highlights from one bucket to another
+              Ability to zoom in/ zoom out of the whiteboard, resizing the idea management tool components themselves.</p>
+
+        </div>
+        <img src="images/notes.jpg" alt="Various coloured Sticky Notes">
+    </section>
+
+    <script>
+        let btn = documents.getElementById('cta-btn');
+        let overlay = documents.getElementById('overlay');
+        btn.addEventlistener("click", () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add("animate-overlay")
+        })
+    </script>
+    
+</body>
+</html>
